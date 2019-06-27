@@ -28,6 +28,17 @@ Some information returned by HealthIndicator is sensitive in nature – but we c
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
+### application.properties
+
+`management.endpoints.web.base-path=/actuator`
+
+http://localhost:8080/actuator/
+
+http://localhost:8080/actuator/info
+
+http://localhost:8080/actuator/health
+
+`{"_links":{"self":{"href":"http://localhost:8080/actuator","templated":false},"health-component-instance":{"href":"http://localhost:8080/actuator/health/{component}/{instance}","templated":true},"health-component":{"href":"http://localhost:8080/actuator/health/{component}","templated":true},"health":{"href":"http://localhost:8080/actuator/health","templated":false},"info":{"href":"http://localhost:8080/actuator/info","templated":false}}}`
 
 You can use the [editor on GitHub](https://github.com/deepavc/springactuator/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
